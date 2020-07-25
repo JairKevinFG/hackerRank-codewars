@@ -1,12 +1,12 @@
 function zeros(n) {
-    let total = 1
-    for (i=1 ; i<=n; i++){
-        total = total * i
+    let zs = 0 
+    while(n>0){
+        n = Math.floor(n/5)
+        zs = n + zs
     }
-    console.log(total)
-    let newtotal = total.toLocaleString().split('')
-    return  newtotal
+
+    return zs
 }
 
 
-console.log(zeros(100))
+console.log(zeros(8))
